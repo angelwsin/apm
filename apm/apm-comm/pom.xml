@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>apm</groupId>
+    <artifactId>apm</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>apm-comm</groupId>
+  <artifactId>apm-comm</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>apm-comm</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>  
+            <groupId>com.sun</groupId>  
+            <artifactId>tools</artifactId>  
+            <version>1.8.0</version>  
+            <scope>system</scope>  
+            <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>  
+        </dependency>
+  </dependencies>
+</project>
