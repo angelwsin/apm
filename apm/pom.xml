@@ -5,6 +5,16 @@
   <artifactId>apm</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  
+  <dependencyManagement>
+   <dependencies>
+    <dependency>
+     <groupId>apm-comm</groupId>
+     <artifactId>apm-comm</artifactId>
+     <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+   </dependencies>
+  </dependencyManagement>
   <build>
   <plugins>
     <plugin>
@@ -81,5 +91,6 @@
   </build>
   <modules>
     <module>apm-comm</module>
+    <module>apm-start</module>
   </modules>
 </project>
