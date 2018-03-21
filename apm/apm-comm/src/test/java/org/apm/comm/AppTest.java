@@ -9,7 +9,7 @@ import javassist.CtMethod;
 public class AppTest
 {
 	
-	@Test
+	//@Test
 	public void test() throws Exception{
 		//ClassFile classFile = new ClassFile(new DataInputStream(in));
 		ClassPool classPool = ClassPool.getDefault();

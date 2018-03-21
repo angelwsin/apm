@@ -7,6 +7,8 @@ public class App
 {
     public static void main( String[] args )
     {
-    	RuntimeUtils.attach("org.apm.comm.exetime.TimeSummerAgent");
+    	RuntimeUtils.attach("D:\\java\\m2\\repository\\apm-comm\\apm-comm\\0.0.1-SNAPSHOT\\apm-comm-0.0.1-SNAPSHOT.jar");
+    	Say say = new Say();
+    	say.say();
     }
 }
