@@ -24,9 +24,12 @@ public class RuntimeUtils {
 			VirtualMachine vm = VirtualMachine.attach(getProcessName());
 			try {
 				vm.loadAgent(agent);
+				Thread.sleep(1000);
 			} catch (AgentLoadException e) {
 				e.printStackTrace();
 			} catch (AgentInitializationException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			vm.detach();
