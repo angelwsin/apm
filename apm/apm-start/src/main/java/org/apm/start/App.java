@@ -14,6 +14,6 @@ public class App
     	
     	Thread.sleep(1000);
     	Say say = new Say();
-    	say.say();
+    	say.say(1000);
     }
 }

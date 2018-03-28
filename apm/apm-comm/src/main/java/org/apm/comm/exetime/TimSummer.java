@@ -5,7 +5,7 @@ import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
 import java.util.Objects;
 
-import org.apm.comm.log.LogOut;
+import org.apm.comm.log.JavassitLogOut;
 
 /*
  * CGLIB、ASM、BCEL、JAVASSIST  
@@ -16,14 +16,14 @@ public class TimSummer implements ClassFileTransformer {
 	@Override
 	public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined,
 			ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
-		System.out.println(className + ",加载");
+		//System.out.println(className + ",加载");
 		// 根类加载器
 		if (Objects.isNull(loader))
 			return null;
 		byte[] b = null;
 		try {
 
-			b = LogOut.becl(classfileBuffer, className);
+			b = JavassitLogOut.becl(classfileBuffer, className);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
